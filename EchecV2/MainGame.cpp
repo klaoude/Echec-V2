@@ -45,6 +45,7 @@ void MainGame::initSystems()
 
 void MainGame::initLevel()
 {
+	m_board = new Board;
 }
 
 void MainGame::initShaders()

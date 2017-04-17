@@ -9,6 +9,8 @@
 #include <KlaoudeEngine/AudioEngine.h>
 #include <KlaoudeEngine/ParticleEngine2D.h>
 
+#include "Board.h"
+
 enum class GameState
 {
 	PLAY,
@@ -37,10 +39,13 @@ private:
 	KlaoudeEngine::InputManager m_inputManager;
 	KlaoudeEngine::Camera2D m_camera;
 	KlaoudeEngine::Camera2D m_hudCamera;
+	KlaoudeEngine::SpriteBatch m_batch;
 
 	int m_screenWidth, m_screenHeight;
 	float m_fps;
 
 	GameState m_gameState;
+
+	Board* m_board;
 };
 
