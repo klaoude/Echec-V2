@@ -47,7 +47,7 @@ void MainGame::initSystems()
 
 void MainGame::initLevel()
 {
-	m_board = new Board(glm::vec2(m_screenWidth / 2.f, m_screenHeight / 2.f));
+	m_board = new Board(glm::vec2(-m_screenHeight /2.f, -m_screenWidth /2.f), glm::vec2(m_screenHeight, m_screenWidth));
 }
 
 void MainGame::initShaders()
@@ -92,6 +92,15 @@ void MainGame::gameLoop()
 			float deltaTime = std::min(totalDeltaTime, MAX_DELTA_TIME);
 			totalDeltaTime -= deltaTime;
 			i++;
+
+			if(m_inputManager.isKeyDown(SDLK_z))
+				m_camera.setPosition(glm::vec2(m_camera.getPosition().x, m_camera.getPosition().y + 1.f));
+			if (m_inputManager.isKeyDown(SDLK_s))
+				m_camera.setPosition(glm::vec2(m_camera.getPosition().x, m_camera.getPosition().y - 1.f));
+			if (m_inputManager.isKeyDown(SDLK_q))
+				m_camera.setPosition(glm::vec2(m_camera.getPosition().x - 1.f, m_camera.getPosition().y));
+			if (m_inputManager.isKeyDown(SDLK_d))
+				m_camera.setPosition(glm::vec2(m_camera.getPosition().x + 1.f, m_camera.getPosition().y));
 		}
 
 		m_camera.update();
