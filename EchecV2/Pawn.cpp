@@ -1,17 +1,13 @@
 #include "Pawn.h"
 
-
-
 Pawn::Pawn()
 {
 }
-
 
 Pawn::~Pawn()
 {
 }
 
-void Pawn::move()
+void Pawn::move(Square *s)
 {
-
 }

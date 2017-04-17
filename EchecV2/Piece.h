@@ -1,6 +1,6 @@
 #pragma once
 
-class Square;
+#include "Square.h"
 
 class Piece
 {
@@ -14,6 +14,6 @@ public:
 	void setAlive(bool value) { m_alive = value; }
 	bool getAlive() { return m_alive; }
 
-	virtual void move(Square *s);
+	virtual void move(Square *s) = 0;
 };
 

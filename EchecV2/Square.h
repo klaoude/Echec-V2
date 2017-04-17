@@ -1,19 +1,20 @@
 #pragma once
-#include "Pawn.h"
+
+class Piece;
 
 class Square
 {
 private:
 	int m_size;
 	bool m_empty;
-	Piece *m_piece;
+	Piece* m_piece;
 
 public:
 	Square(int size);
 	~Square();
+
 	bool isEmpty() { return m_empty; }
 	void setEmpty(bool b) { m_empty = b; }
 	void setPiece(Piece *p) { m_piece = p; }
-
 };
 
