@@ -3,7 +3,7 @@
 #include <KlaoudeEngine/SpriteBatch.h>
 
 #include "Pawn.h"
-
+#include "Square.h"
 class Board
 {
 public:
@@ -17,5 +17,4 @@ private:
 	glm::vec2 m_position;
 	glm::vec2 m_size;
 
-	Pawn m_paw;
 };
