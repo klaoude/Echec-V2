@@ -2,7 +2,7 @@
 
 #pragma once
 
-class Pawn : Piece
+class Pawn : public Piece
 {
 private:
 

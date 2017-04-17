@@ -7,7 +7,8 @@ Board::Board(glm::vec2 position, glm::vec2 size)
 	m_textureID = KlaoudeEngine::RessourceManager::getTexture("Sprites/board.png").id;
 	m_position = position;
 	m_size = size;
-	Square s;
+
+	Square s(10);
 	s.setPiece(new Pawn());
 
 }
