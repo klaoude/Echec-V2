@@ -41,11 +41,13 @@ void MainGame::initSystems()
 	m_camera.init(m_screenWidth, m_screenHeight);
 	m_hudCamera.init(m_screenWidth, m_screenHeight);
 	m_hudCamera.setPosition(glm::vec2(m_screenWidth / 2, m_screenHeight / 2));
+
+	m_batch.init();
 }
 
 void MainGame::initLevel()
 {
-	m_board = new Board;
+	m_board = new Board(glm::vec2(m_screenWidth / 2.f, m_screenHeight / 2.f));
 }
 
 void MainGame::initShaders()
@@ -146,12 +148,16 @@ void MainGame::drawGame()
 	glUniformMatrix4fv(pUniform, 1, GL_FALSE, &projectionMatrix[0][0]);
 
 	//SpriteBatch Begin
+	m_batch.begin();
 
 	//SpriteBatch Draw
+	m_board->draw(m_batch);
 
 	//SpriteBatch End
+	m_batch.end();
 
 	//SpriteBatch Render
+	m_batch.renderBatch();
 
 	drawHud();
 
