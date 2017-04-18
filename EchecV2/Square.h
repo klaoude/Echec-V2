@@ -3,6 +3,16 @@
 #include <KlaoudeEngine\SpriteBatch.h>
 #include <KlaoudeEngine\TileSheet.h>
 
+//Sprite uv code
+/*         BLANC    NOIR    
+ROI          0        6
+REINE        1        7
+PION         5        11
+CAVALIER     3        9
+FOU          2        8
+TOUR         4        10
+*/
+
 class Piece;
 
 class Square
