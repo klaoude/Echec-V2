@@ -11,5 +11,6 @@ public:
 	~Pawn();
 
 	void move(Square *s, Square *d) override;
+	void move(Square *s) override;
 };
 

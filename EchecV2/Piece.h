@@ -2,7 +2,7 @@
 
 #include "Square.h"
 
-const float SIZE = 10.f;
+const glm::vec2 SIZE = glm::vec2(100, 100);
 
 enum Color
 {
@@ -17,8 +17,9 @@ private:
 	Color m_color;
 
 protected:
-	GLuint m_textureID;
-	KlaoudeEngine::ColorRGBA8 m_color;
+	KlaoudeEngine::TileSheet m_texture;
+
+	KlaoudeEngine::ColorRGBA8 m_colorRGBA8;
 	glm::vec2 m_direction;
 	glm::vec2 m_position;
 	glm::vec4 m_uvRect;

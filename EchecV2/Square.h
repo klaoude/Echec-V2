@@ -1,6 +1,7 @@
 #pragma once
 
 #include <KlaoudeEngine\SpriteBatch.h>
+#include <KlaoudeEngine\TileSheet.h>
 
 class Piece;
 
