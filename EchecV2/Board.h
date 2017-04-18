@@ -16,5 +16,7 @@ private:
 	GLuint m_textureID;
 	glm::vec2 m_position;
 	glm::vec2 m_size;
+	Square *m_squares[8][8];
+
 
 };

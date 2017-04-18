@@ -8,9 +8,9 @@ Board::Board(glm::vec2 position, glm::vec2 size)
 	m_position = position;
 	m_size = size;
 
-	Square s(10);
-	s.setPiece(new Pawn());
-
+	for (int i = 0; i < 8; i++)
+		for (int j = 0; j < 8; j++)
+			m_squares[i][j] = new Square(j, i);
 }
 
 Board::~Board()
