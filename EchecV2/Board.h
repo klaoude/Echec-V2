@@ -3,6 +3,7 @@
 #include <KlaoudeEngine/SpriteBatch.h>
 
 #include "Pawn.h"
+#include "Knight.h"
 #include "Square.h"
 class Board
 {

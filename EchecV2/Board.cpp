@@ -12,7 +12,7 @@ Board::Board(glm::vec2 position, glm::vec2 size)
 		for (int j = 0; j < 8; j++)
 			m_squares[i][j] = new Square(j, i);
 
-	m_squares[0][0]->setPiece(new Pawn(BLACK));
+	m_squares[0][0]->setPiece(new Knight(BLACK));
 
 
 }

@@ -15,6 +15,14 @@ void Square::movePiece(Square * d)
 {
 	if (m_piece->canMove(this, d))
 	{
+		d->setPiece(m_piece);
+		d->setEmpty(false);
 
+		setEmpty(true);
+		setPiece(nullptr);
+	}
+	else
+	{
+		printf("\nMOVE NON AUTORISE\n");
 	}
 }

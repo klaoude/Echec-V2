@@ -5,12 +5,12 @@
 
 //Sprite uv code
 /*         BLANC    NOIR    
-ROI          0        6
-REINE        1        7
+ROI          6        0
+REINE        7        1
 PION         11       5
-CAVALIER     3        9
-FOU          2        8
-TOUR         4        10
+CAVALIER     9        3
+FOU          8        2
+TOUR         10       4
 */
 
 class Piece;
