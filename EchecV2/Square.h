@@ -7,7 +7,7 @@
 /*         BLANC    NOIR    
 ROI          0        6
 REINE        1        7
-PION         5        11
+PION         11       5
 CAVALIER     3        9
 FOU          2        8
 TOUR         4        10
@@ -35,6 +35,8 @@ public:
 	void setPiece(Piece *p) { m_piece = p; }
 
 	Piece *getPiece() { return m_piece; }
+
+	void movePiece(Square *d);
 
 	int getX() { return m_x; }
 	int getY() { return m_y; }

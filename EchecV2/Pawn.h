@@ -10,6 +10,6 @@ public:
 	Pawn(Color c);
 	~Pawn();
 
-	void move(Square *s, Square *d) override;
+	bool canMove(Square *s, Square *d) override;
 };
 

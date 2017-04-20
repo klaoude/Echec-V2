@@ -15,10 +15,6 @@ Piece::~Piece()
 {
 }
 
-void Piece::move(Square *s, Square *d)
-{	
-
-}
 
 void Piece::draw(KlaoudeEngine::SpriteBatch& spritebatch)
 {

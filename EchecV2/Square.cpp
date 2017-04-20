@@ -9,3 +9,8 @@ Square::Square(int x, int y)
 Square::~Square()
 {
 }
+
+void Square::movePiece(Square * d)
+{
+	if (m_piece->canMove(this, d))
+}
