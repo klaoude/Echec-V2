@@ -35,7 +35,6 @@ public:
 	void setColor(Color c) { m_color = c; }
 
 	virtual void move(Square *s, Square *d) = 0;
-	virtual void move(Square *s) = 0;
 
 	virtual void draw(KlaoudeEngine::SpriteBatch& batch);
 };

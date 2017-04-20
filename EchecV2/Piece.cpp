@@ -15,7 +15,7 @@ Piece::~Piece()
 {
 }
 
-void Piece::move(Square *s)
+void Piece::move(Square *s, Square *d)
 {	
 
 }

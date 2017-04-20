@@ -35,7 +35,7 @@ void Pawn::move(Square *s, Square *d)
 	}
 }
 
-void Pawn::move(Square *s)
+void Pawn::move(Square *s, Square *d)
 {
 
 }
