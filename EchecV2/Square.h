@@ -34,7 +34,7 @@ public:
 
 	void setPiece(Piece *p) { m_piece = p; }
 
-	Piece *getPiece() { return m_piece; }
+	Piece* getPiece() { return m_piece; }
 
 	void movePiece(Square *d);
 
