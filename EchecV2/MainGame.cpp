@@ -12,8 +12,8 @@
 #include <KlaoudeEngine/RessourceManager.h>
 
 MainGame::MainGame() :
-	m_screenWidth(1024),
-	m_screenHeight(768),
+	m_screenWidth(800),
+	m_screenHeight(600),
 	m_fps(0),
 	m_gameState(GameState::PLAY) {}
 
@@ -32,7 +32,7 @@ void MainGame::run()
 void MainGame::initSystems()
 {
 	KlaoudeEngine::init();
-
+	 
 	m_window.create("Echec V2", m_screenWidth, m_screenHeight, 0);
 	glClearColor(0.7f, 0.7f, 0.7f, 1.0f);
 
